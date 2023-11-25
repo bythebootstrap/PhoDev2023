@@ -67,7 +67,7 @@
             <img src="/images/wide-noodles.jpg" alt="photo of wide noodles with shrimp and vegetables">
             <img src="/images/vermicelli.jpg" alt="photo of bun vermicelli noodles with egg rolls and a salad">
         </div>
-        <section id="philanthropy" class="xl-row">
+        <section id="philanthropy" class="xl-row flex-row">
             <div class="column">
                 <img src="/images/charity-L.png" alt="graphic of a basil plant" id="basil">
             </div>
@@ -76,7 +76,47 @@
                 <p>A portion of the proceeds support our philanthropy both internationally and in Port Townsend. Additionally 100% of all apparel and instant Vietnamese coffee sales benefit Vietnamese families in need.</p>
                 <p>Please ask if you would like more information on us or our charity projects.</p> 
             </div>
+            <div class="column">
+                <img src="/images/ginger-chili.png" alt="graphic of ginger root and red chili pepper" id="ginger-chili">
+            </div>
         </section>
+        <footer id="contact">
+            <div class="grid-row" id="footer-grid">
+                <div id="share">
+                    <h4>Share your Happiness</h4>
+                    <div class="flex">
+                        <a href="https://www.facebook.com/Phothaopt/"><img src="images/facebook.png"></a>
+                        <a href="https://goo.gl/maps/QmH7Hmr3MRnfymMm8"><img src="images/Google.png"></a>
+                        <a href="https://www.tripadvisor.com/Restaurant_Review-g58687-d7374015-Reviews-Pho_Thao-Port_Townsend_Washington.html"><img src="images/tripadvisor.png"></a>
+                        <a href="https://www.yelp.com/biz/pho-thao-port-townsend"><img src="images/yelp.png"></a>
+                        <a href="https://www.zomato.com/port-townsend-wa/pho-thao-port-townsend/info"><img src="images/zomato.png"></a>
+                    </div>
+                    <p>Enjoy one of our fresh dishes at our restaurant or at home<br>with our takeout and delivery options.</p>
+                    <div class="flex flex-links">
+                        <a href="https://toasttab.com/pho-filling-2310-washington-street" target="_blank">Order Online</a>
+                        <a href="https://order.online/business/phofilling-11388833" target="_blank">DoorDash</a>
+                    </div>
+                    <p>Or call ahead with your order</p>
+                    <a class="tel" href="tel:1-360-385-3240">(360) 385-3240</a>
+                    <a href="https://goo.gl/maps/KpYqz2Qvk8P4h12P9">2310 Washington Street Port Townsend, WA98368</a>
+                </div>
+                <div id="questions">
+                    <h4>QUESTIONS, COMMENTS, OR SUGGESTIONS</h4>
+                    <p>Send us an email and we will get back to you as soon as possible. Have a great day!</p>
+                </div>
+                <div id="email">
+                    <form id="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="bot-field">
+                        <input type="hidden" name="form-name" value="contact-form">
+                        <input type="name" id="name" name="name" placeholder="Your Name" required="">
+                        <input type="email" id="email" name="email" placeholder="Email" required="">
+                        <textarea id="message" placeholder="Message" name="message" rows="10"></textarea>
+                        <button type="submit" class="send-button">Send</button>
+                    </form>
+                </div>
+            </div>
+            <p class="center" id="footer-copyright">©2023 Pho Filling Co.  |  Photography, design, and development by <a href="https://bythebootstrap.us" target="_blank">Bootstrap Commercial Arts</a></p>
+        </footer>
         <script type="text/javascript" src="https://honest-utilities.netlify.app/honest.js"></script>
     </body>
 </html>
