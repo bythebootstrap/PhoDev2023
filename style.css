@@ -1,0 +1,158 @@
+:root {
+    --cream: #efe3d8;
+    --lightgreen: #a8d26e;
+    --green: #65a944;
+    --purple: #7b2c6a;
+    --darkpurple: #622755;
+  }
+@font-face {
+    font-family: montserrat;
+    src: url(/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: dosis;
+    src: url(/fonts/Dosis[wght].ttf);
+    font-weight: 100 950;
+}
+html {
+    background-color: var(--purple);
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: montserrat;
+    color: var(--cream);
+}
+h1 {font-size: 7rem}
+h2 {font-size: 5.5rem;}
+h3 {font-size: 3.75rem;}
+h4 {font-size: 3rem;}
+h5 {font-size: 2.25rem;}
+h6 {
+    font-size: 1.5rem;
+    color: var(--lightgreen);
+}
+p, a, input, select, label, button, ::placeholder {
+    font-family: 'dosis';
+    font-size: 1.5rem;
+    color: var(--cream);
+    font-weight: 200;
+    filter: brightness(1) drop-shadow(0 0 0 rgba(0,0,0,0));
+    transition-property: filter;
+    transition-duration: .3s;
+}
+a {
+    text-decoration: none;
+    color: var(--lightgreen);
+}
+a:hover, button:hover, #search-icon:hover {
+    filter: brightness(.8) drop-shadow(0 0 0 var(--darkpurple));
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+p + p {
+    margin-top: 1rem;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+#top-row {
+    align-items: flex-start
+}
+.tel {
+    color: var(--cream);
+    font-family: montserrat;
+    font-size: 2.25rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+#logo {
+    width: 40rem;
+}
+menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+menu a {
+    font-family: montserrat;
+    text-transform: uppercase;
+    color: var(--cream);
+}
+#menu-wrapper {
+    background-color: var(--darkpurple);
+    padding: 2rem;
+}
+#menu-wrapper .column {
+    text-align: center;
+}
+#order-online {
+    background-color: var(--green);
+    padding: 1rem 3rem;
+}
+#door-dash {
+    border: solid .25rem var(--green);
+    padding: .75rem 3rem;
+}
+#p-to-g-curve {
+    background-color: var(--purple);
+    border-radius: 0 0 50% 50%;
+    height: 20rem;
+    margin-bottom: -13rem;
+    margin-top: -14rem;
+    z-index: -1;
+    width: 120%;
+    margin-left: -10%;
+    position: relative;
+}
+#mission p {
+    text-align: center;
+    color: var(--lightgreen);
+    font-weight: 400;
+    font-size: 2.75rem;
+    max-width: 80rem;
+    margin: auto;
+    padding: 3rem;
+}
+#photo-row {
+    background-color: var(--green);
+    z-index: -2;
+    padding: 16rem 1rem;
+    min-height: 10rem;
+    position: relative;
+}
+#photo-row p {
+    font-size: 3rem;
+    font-weight: 400;
+}
+#g-to-p-curve {
+    background-color: var(--purple);
+    border-radius: 50% 50% 0 0;
+    height: 20rem;
+    margin-bottom: -13rem;
+    margin-top: -14rem;
+    z-index: -1;
+    width: 120%;
+    margin-left: -10%;
+    position: relative;
+}
+#shrimps {
+    transform: translateX(-25%);
+    max-width: 33vw;
+}
+#noodles {
+    transform: translate(-20%, -25%);
+    max-width: 33vw;
+    position: relative
+    ;
+}
