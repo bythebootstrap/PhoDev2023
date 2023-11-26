@@ -250,3 +250,67 @@ footer {
     font-size: 1.25rem;
     color: var(--darkpurple);
 }
+
+@media screen and (max-width: 680px) {
+    #top-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 1px;
+    }
+    #top-row .column:first-of-type { grid-area: 1 / 1 / 2 / 2; }
+    #top-row .column:last-of-type { grid-area: 1 / 2 / 2 / 3; }
+    #top-row .column:nth-child(2) { 
+        grid-area: 2 / 1 / 3 / 3; 
+        margin: auto;
+    }
+    #top-row p + p {margin-top:0}
+    menu li a{
+        display: block;
+        text-align: center;
+        margin: 1rem;
+    }
+    menu li:nth-child(2) {
+        border-top: .25rem solid var(--purple);
+        border-bottom: .25rem solid var(--purple);
+    }
+    #noodles {
+        transform: scale(1.25) translateX(6rem);
+    }
+    #bringing-joy {
+        transform: none;
+    }
+    #photos {
+        display: flex;
+        margin-top: -25rem;
+    }
+    #photos img:last-child {display: none;}
+    #photos img {
+        height:19.5rem;
+    }
+    #basil {
+        left: -10rem;
+    }
+    #improving-our-world {
+        margin-left: 20rem;
+    }
+    #ginger-chili {
+        transform: scale(1.5) translate(8rem, 4rem);
+    }
+    footer {
+        background-size: 70vw;
+    }
+    #footer-grid {
+        display: block;
+    }
+    #share {
+        margin-top: 10rem
+    }
+    #questions {
+        text-align: center;
+        margin: 4rem;
+        padding-left: unset;
+    }
+    #contact-form *:not(button) {width: 46rem;}
+}
