@@ -142,6 +142,9 @@ menu a {
 #photo-row .column {
     transform: translateY(-5rem);
 }
+#menu img {
+    max-width: 100%;
+}
 #g-to-p-curve {
     background-color: var(--purple);
     border-radius: 50% 50% 0 0;
